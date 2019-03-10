@@ -8,7 +8,7 @@ import java.util.function.DoubleBinaryOperator;
 public class Calc {
     private static Map<Character, DoubleBinaryOperator> operation;
 
-    static  {
+    static {
         operation = new HashMap<>();
         operation.put('+', Double::sum);
         operation.put('-', (a, b) -> a - b);
